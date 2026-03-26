@@ -30,5 +30,6 @@ The Data is normalized into a unified JSON format and printed to the console.
 |   |   |__ utils.ts
 |   ├── models/
 │   │   └── Order.ts
+|   |   |__ CallInfoDomain.ts
 |   |index.ts
 ```
