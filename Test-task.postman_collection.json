@@ -1,0 +1,145 @@
+{
+  "info": {
+    "_postman_id": "d8279f86-3335-49eb-bf2d-8c0f6467594d",
+    "name": "Test-task",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "385264",
+    "_collection_link": "https://go.postman.co/collection/385264-d8279f86-3335-49eb-bf2d-8c0f6467594d?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Get orders",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "SOAPAction",
+            "value": "{N/A}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "text/xml; charset=utf-8",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "<x:Envelope\n    xmlns:x=\"http://schemas.xmlsoap.org/soap/envelope/\"\n    xmlns:urn=\"urn:SPDServicerService\">\n    <x:Header/>\n    <x:Body>\n        <urn:getCallInfoSearch>\n            <UserInfo>\n                <UserID>ELC00001</UserID>\n                <Password>TEST</Password>\n                <SvcrAcct>ELC00001</SvcrAcct>\n            </UserInfo>\n            <FromDateTime>10/27/2025 12:00:00</FromDateTime>\n            <ToDateTime>10/28/2025 12:00:00</ToDateTime>\n            <Callno></Callno>\n            <Versionno></Versionno>\n        </urn:getCallInfoSearch>\n    </x:Body>\n</x:Envelope>\n\n\n",
+          "options": {
+            "raw": {
+              "language": "xml"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://67b30d76-8691-4dd6-84a5-87372deedf47.mock.pstmn.io/sms/services/SPDService",
+          "protocol": "https",
+          "host": [
+            "67b30d76-8691-4dd6-84a5-87372deedf47",
+            "mock",
+            "pstmn",
+            "io"
+          ],
+          "path": [
+            "sms",
+            "services",
+            "SPDService"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Get orders",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "SOAPAction",
+                "value": "{N/A}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "text/xml; charset=utf-8",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "<x:Envelope\n    xmlns:x=\"http://schemas.xmlsoap.org/soap/envelope/\"\n    xmlns:urn=\"urn:SPDServicerService\">\n    <x:Header/>\n    <x:Body>\n        <urn:getCallInfoSearch>\n            <UserInfo>\n                <UserID>ELC00001</UserID>\n                <Password>4!YkyY@A45P^bD</Password>\n                <SvcrAcct>ELC00001</SvcrAcct>\n            </UserInfo>\n            <FromDateTime>10/27/2025 12:00:00</FromDateTime>\n            <ToDateTime>10/28/2025 12:00:00</ToDateTime>\n            <Callno></Callno>\n            <Versionno></Versionno>\n        </urn:getCallInfoSearch>\n    </x:Body>\n</x:Envelope>\n\n\n",
+              "options": {
+                "raw": {
+                  "language": "xml"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://fss.servicepower.eu/sms/services/SPDService",
+              "protocol": "https",
+              "host": [
+                "fss",
+                "servicepower",
+                "eu"
+              ],
+              "path": [
+                "sms",
+                "services",
+                "SPDService"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "",
+          "header": [
+            {
+              "key": "Date",
+              "value": "Thu, 19 Feb 2026 16:50:12 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "text/xml;charset=utf-8"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Set-Cookie",
+              "value": "AWSALB=obtF86MApI4MDbt2UiWdObJpLRuoROYMXg93HZunSE1AjVKNNGLOf5D+Szl+eA5pzODbIpGsDpOe7XBmN94muobD1f9RPnx/qNCCFVUXL4qUcDLT8Dyaij83fz1v; Expires=Thu, 26 Feb 2026 16:50:12 GMT; Path=/"
+            },
+            {
+              "key": "Set-Cookie",
+              "value": "AWSALBCORS=obtF86MApI4MDbt2UiWdObJpLRuoROYMXg93HZunSE1AjVKNNGLOf5D+Szl+eA5pzODbIpGsDpOe7XBmN94muobD1f9RPnx/qNCCFVUXL4qUcDLT8Dyaij83fz1v; Expires=Thu, 26 Feb 2026 16:50:12 GMT; Path=/; SameSite=None; Secure"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "key": "Server",
+              "value": ""
+            }
+          ],
+          "cookie": [
+            {
+              "expires": "Invalid Date",
+              "domain": "",
+              "path": ""
+            }
+          ],
+          "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n    <soapenv:Body>\n        <getCallInfoResponce xmlns=\"urn:SPDServicerService\">\n            <numberOfCalls xmlns=\"\">10</numberOfCalls>\n            <CallInfo xmlns=\"\">\n                <ServicerAccount>ELC00001</ServicerAccount>\n                <GroupKey>G001</GroupKey>\n                <TechKey></TechKey>\n                <CallNumber>063016954132</CallNumber>\n                <MfgId>STEU</MfgId>\n                <FSSCallId>34888735</FSSCallId>\n                <ServiceCenter>ELCARE</ServiceCenter>\n                <WarrantyType>IW</WarrantyType>\n                <ServicetType>REP</ServicetType>\n                <ServiceLocation>IH</ServiceLocation>\n                <ScheduleDate>12/30/2099</ScheduleDate>\n                <ScheduleTimePeriod>8-17</ScheduleTimePeriod>\n                <ProblemType>Repair</ProblemType>\n                <ProbelmDesc>They were moving the tv to first bottom floor in his house. They accidentally dropped the tv in the stairs. Frame has damage.</ProbelmDesc>\n                <RepeatCall>NO</RepeatCall>\n                <ForcedCall>NO</ForcedCall>\n                <CallStatus>COMPLETED</CallStatus>\n                <SPCallStatusID>5</SPCallStatusID>\n                <CallSubStatus>BEYOND ECONOMIC REPAIR</CallSubStatus>\n                <SPCallSubStatusID>14465</SPCallSubStatusID>\n                <ConsumerInfo>\n                    <ConsumerFirstName>John</ConsumerFirstName>\n                    <ConsumerLastName>Doe</ConsumerLastName>\n                    <ConsumerAddress1>Teststreet 11</ConsumerAddress1>\n                    <ConsumerAddress2>Kung&#xE4;lv</ConsumerAddress2>\n                    <PostcodeLevel1>V&#xE4;stra G&#xF6;taland</PostcodeLevel1>\n                    <PostcodeLevel2></PostcodeLevel2>\n                    <PostcodeLevel3>Kung&#xE4;lv</PostcodeLevel3>\n                    <Postcode>442 37</Postcode>\n                    <Country>SE</Country>\n                    <Phone1>46760100000</Phone1>\n                    <Phone2>0</Phone2>\n                    <CellPhone>0</CellPhone>\n                    <EmaiIld>test@example.com</EmaiIld>\n                </ConsumerInfo>\n                <ProductInfo>\n                    <SPBrandId>LGA</SPBrandId>\n                    <SPBrandDesc>LG</SPBrandDesc>\n                    <SPProductId>TV123</SPProductId>\n                    <SPProductDesc>TELEVISION 28&quot; AND LARGER</SPProductDesc>\n                    <MobelNo>55QNED85UQAAUS/NULL</MobelNo>\n                    <SerialNo>507TAHQ0G321</SerialNo>\n                    <InstallDate>10/10/2025</InstallDate>\n                    <ServiceContractNumber> </ServiceContractNumber>\n                    <ServiceContractExpireDate xsi:nil=\"true\"/>\n                    <PoNumber></PoNumber>\n                    <PoAmount>0</PoAmount>\n                    <CopayAmount>0</CopayAmount>\n                </ProductInfo>\n                <ShippingInfo xsi:nil=\"true\"/>\n                <CallCreatedOn>10/27/2025 19:03:59</CallCreatedOn>\n                <AuthNo xsi:nil=\"true\"/>\n            </CallInfo>\n            <CallInfo xmlns=\"\">\n                <ServicerAccount>ELC00001</ServicerAccount>\n                <GroupKey>G0003</GroupKey>\n                <TechKey></TechKey>\n                <CallNumber>021205954134</CallNumber>\n                <MfgId>STEU</MfgId>\n                <FSSCallId>34888737</FSSCallId>\n                <ServiceCenter>ELCARE</ServiceCenter>\n                <WarrantyType>IW</WarrantyType>\n                <ServicetType>REP</ServicetType>\n                <ServiceLocation>IH</ServiceLocation>\n                <ScheduleDate>12/30/2099</ScheduleDate>\n                <ScheduleTimePeriod>8-17</ScheduleTimePeriod>\n                <ProblemType>Repair</ProblemType>\n                <ProbelmDesc>Hei Jeg ser to lyse/hvite punktfeil p&#xE5; TV-panelet. Disse punktene reduserer bildekvaliteten (eller hindrer synsfeltet) betydelig</ProbelmDesc>\n                <RepeatCall>NO</RepeatCall>\n                <ForcedCall>NO</ForcedCall>\n                <CallStatus>COMPLETED</CallStatus>\n                <SPCallStatusID>5</SPCallStatusID>\n                <CallSubStatus>REPAIRED</CallSubStatus>\n                <SPCallSubStatusID>14472</SPCallSubStatusID>\n                <ConsumerInfo>\n                    <ConsumerFirstName>ABDULLA</ConsumerFirstName>\n                    <ConsumerLastName>ABDULLA KASSOUM</ConsumerLastName>\n                    <ConsumerAddress1>H&#xF8;yrabben 60</ConsumerAddress1>\n                    <ConsumerAddress2></ConsumerAddress2>\n                    <PostcodeLevel1>Akershus</PostcodeLevel1>\n                    <PostcodeLevel2></PostcodeLevel2>\n                    <PostcodeLevel3>Sandvika</PostcodeLevel3>\n                    <Postcode>1336</Postcode>\n                    <Country>NO</Country>\n                    <Phone1>4745500788</Phone1>\n                    <Phone2>0</Phone2>\n                    <CellPhone>0</CellPhone>\n                    <EmaiIld>abokose1998mm@gmail.com</EmaiIld>\n                </ConsumerInfo>\n                <ProductInfo>\n                    <SPBrandId>LGA</SPBrandId>\n                    <SPBrandDesc>LG</SPBrandDesc>\n                    <SPProductId>TV123</SPProductId>\n                    <SPProductDesc>TELEVISION 28&quot; AND LARGER</SPProductDesc>\n                    <MobelNo>65QNED80AQA/NULL</MobelNo>\n                    <SerialNo>409MAXJSB586</SerialNo>\n                    <InstallDate>10/16/2024</InstallDate>\n                    <ServiceContractNumber> </ServiceContractNumber>\n                    <ServiceContractExpireDate xsi:nil=\"true\"/>\n                    <PoNumber></PoNumber>\n                    <PoAmount>0</PoAmount>\n                    <CopayAmount>0</CopayAmount>\n                </ProductInfo>\n                <ShippingInfo xsi:nil=\"true\"/>\n                <CallCreatedOn>10/27/2025 19:05:06</CallCreatedOn>\n                <AuthNo xsi:nil=\"true\"/>\n            </CallInfo>\n            <CallInfo xmlns=\"\">\n                <ServicerAccount>ELC00001</ServicerAccount>\n                <GroupKey>G001</GroupKey>\n                <TechKey></TechKey>\n                <CallNumber>033985954136</CallNumber>\n                <MfgId>STEU</MfgId>\n                <FSSCallId>34888742</FSSCallId>\n                <ServiceCenter>ELCARE</ServiceCenter>\n                <WarrantyType>SC</WarrantyType>\n                <ServicetType>REP</ServicetType>\n                <ServiceLocation>IH</ServiceLocation>\n                <ScheduleDate>12/30/2099</ScheduleDate>\n                <ScheduleTimePeriod>8-17</ScheduleTimePeriod>\n                <ProblemType>Repair</ProblemType>\n                <ProbelmDesc>Vi komm hem efter helgen uppt&#xE4;ckte att frysen slutat att fungera. Halva frysen fungerar andra halvan rumstemperaur</ProbelmDesc>\n                <RepeatCall>NO</RepeatCall>\n                <ForcedCall>NO</ForcedCall>\n                <CallStatus>COMPLETED</CallStatus>\n                <SPCallStatusID>5</SPCallStatusID>\n                <CallSubStatus>REPAIRED</CallSubStatus>\n                <SPCallSubStatusID>14472</SPCallSubStatusID>\n                <ConsumerInfo>\n                    <ConsumerFirstName>ULRICA</ConsumerFirstName>\n                    <ConsumerLastName>KERNEN</ConsumerLastName>\n                    <ConsumerAddress1>Strandv&#xE4;gen 44</ConsumerAddress1>\n                    <ConsumerAddress2></ConsumerAddress2>\n                    <PostcodeLevel1>S&#xF6;dermanland</PostcodeLevel1>\n                    <PostcodeLevel2></PostcodeLevel2>\n                    <PostcodeLevel3>Katrineholm</PostcodeLevel3>\n                    <Postcode>641 50</Postcode>\n                    <Country>SE</Country>\n                    <Phone1>46706873746</Phone1>\n                    <Phone2>0</Phone2>\n                    <CellPhone>0</CellPhone>\n                    <EmaiIld>kernenulrica@gmail.com</EmaiIld>\n                </ConsumerInfo>\n                <ProductInfo>\n                    <SPBrandId>ELELX</SPBrandId>\n                    <SPBrandDesc>ELECTROLUX</SPBrandDesc>\n                    <SPProductId>REF</SPProductId>\n                    <SPProductDesc>REFRIGERATOR</SPProductDesc>\n                    <MobelNo> </MobelNo>\n                    <SerialNo> </SerialNo>\n                    <InstallDate>02/03/2022</InstallDate>\n                    <ServiceContractNumber> </ServiceContractNumber>\n                    <ServiceContractExpireDate xsi:nil=\"true\"/>\n                    <PoNumber></PoNumber>\n                    <PoAmount>0</PoAmount>\n                    <CopayAmount>0</CopayAmount>\n                </ProductInfo>\n                <ShippingInfo xsi:nil=\"true\"/>\n                <CallCreatedOn>10/27/2025 19:07:28</CallCreatedOn>\n                <AuthNo xsi:nil=\"true\"/>\n            </CallInfo>\n            <CallInfo xmlns=\"\">\n                <ServicerAccount>ELC00001</ServicerAccount>\n                <GroupKey>G0003</GroupKey>\n                <TechKey></TechKey>\n                <CallNumber>092835954139</CallNumber>\n                <MfgId>STEU</MfgId>\n                <FSSCallId>34888744</FSSCallId>\n                <ServiceCenter>ELCARE</ServiceCenter>\n                <WarrantyType>IW</WarrantyType>\n                <ServicetType>REP</ServicetType>\n                <ServiceLocation>IH</ServiceLocation>\n                <ScheduleDate>12/30/2099</ScheduleDate>\n                <ScheduleTimePeriod>8-17</ScheduleTimePeriod>\n                <ProblemType>Repair</ProblemType>\n                <ProbelmDesc>Skade p&#xE5; panelet. </ProbelmDesc>\n                <RepeatCall>NO</RepeatCall>\n                <ForcedCall>NO</ForcedCall>\n                <CallStatus>COMPLETED</CallStatus>\n                <SPCallStatusID>5</SPCallStatusID>\n                <CallSubStatus>REPAIRED</CallSubStatus>\n                <SPCallSubStatusID>14472</SPCallSubStatusID>\n                <ConsumerInfo>\n                    <ConsumerFirstName>John</ConsumerFirstName>\n                    <ConsumerLastName>Testinen</ConsumerLastName>\n                    <ConsumerAddress1>Somestreet 32</ConsumerAddress1>\n                    <ConsumerAddress2></ConsumerAddress2>\n                    <PostcodeLevel1>Buskerud</PostcodeLevel1>\n                    <PostcodeLevel2></PostcodeLevel2>\n                    <PostcodeLevel3>Geithus</PostcodeLevel3>\n                    <Postcode>3360</Postcode>\n                    <Country>NO</Country>\n                    <Phone1>0728000000</Phone1>\n                    <Phone2>0</Phone2>\n                    <CellPhone>0</CellPhone>\n                    <EmaiIld>john@example.com</EmaiIld>\n                </ConsumerInfo>\n                <ProductInfo>\n                    <SPBrandId>TOM</SPBrandId>\n                    <SPBrandDesc>THOMSON</SPBrandDesc>\n                    <SPProductId>TV123</SPProductId>\n                    <SPProductDesc>TELEVISION 28&quot; AND LARGER</SPProductDesc>\n                    <MobelNo>NULL/NULL</MobelNo>\n                    <SerialNo>107424251401491</SerialNo>\n                    <InstallDate>09/15/2025</InstallDate>\n                    <ServiceContractNumber> </ServiceContractNumber>\n                    <ServiceContractExpireDate xsi:nil=\"true\"/>\n                    <PoNumber></PoNumber>\n                    <PoAmount>0</PoAmount>\n                    <CopayAmount>0</CopayAmount>\n                </ProductInfo>\n                <ShippingInfo xsi:nil=\"true\"/>\n                <CallCreatedOn>10/27/2025 19:08:23</CallCreatedOn>\n                <AuthNo xsi:nil=\"true\"/>\n            </CallInfo>\n            <CallInfo xmlns=\"\">\n                <ServicerAccount>ELC00001</ServicerAccount>\n                <GroupKey>G001</GroupKey>\n                <TechKey></TechKey>\n                <CallNumber>022404954130</CallNumber>\n                <MfgId>STEU</MfgId>\n                <FSSCallId>34888745</FSSCallId>\n                <ServiceCenter>ELCARE</ServiceCenter>\n                <WarrantyType>IW</WarrantyType>\n                <ServicetType>REP</ServicetType>\n                <ServiceLocation>IH</ServiceLocation>\n                <ScheduleDate>12/30/2099</ScheduleDate>\n                <ScheduleTimePeriod>8-17</ScheduleTimePeriod>\n                <ProblemType>Repair</ProblemType>\n                <ProbelmDesc>Mitt barn lekte hemma och r&#xE5;kade kasta ett f&#xF6;rem&#xE5;l mot tv:n. sk&#xE4;rmen sprack och fungerar inte l&#xE4;ngre. Skadan uppstod pl&#xF6;tsligt och oavsiktigt</ProbelmDesc>\n                <RepeatCall>NO</RepeatCall>\n                <ForcedCall>NO</ForcedCall>\n                <CallStatus>COMPLETED</CallStatus>\n                <SPCallStatusID>5</SPCallStatusID>\n                <CallSubStatus>BEYOND ECONOMIC REPAIR</CallSubStatus>\n                <SPCallSubStatusID>14465</SPCallSubStatusID>\n                <ConsumerInfo>\n                    <ConsumerFirstName>Kevin</ConsumerFirstName>\n                    <ConsumerLastName>Smith</ConsumerLastName>\n                    <ConsumerAddress1>Skrinnarv&#xE4;gen 1</ConsumerAddress1>\n                    <ConsumerAddress2>Eskilstuna</ConsumerAddress2>\n                    <PostcodeLevel1>S&#xF6;dermanland</PostcodeLevel1>\n                    <PostcodeLevel2></PostcodeLevel2>\n                    <PostcodeLevel3>Eskilstuna</PostcodeLevel3>\n                    <Postcode>633 59</Postcode>\n                    <Country>SE</Country>\n                    <Phone1>46700000000</Phone1>\n                    <Phone2>0</Phone2>\n                    <CellPhone>0</CellPhone>\n                    <EmaiIld>kevin@example.com</EmaiIld>\n                </ConsumerInfo>\n                <ProductInfo>\n                    <SPBrandId>SMG</SPBrandId>\n                    <SPBrandDesc>SAMSUNG</SPBrandDesc>\n                    <SPProductId>TV123</SPProductId>\n                    <SPProductDesc>TELEVISION 28&quot; AND LARGER</SPProductDesc>\n                    <MobelNo>75CU7000/NULL</MobelNo>\n                    <SerialNo>0M1X3HBXC00282Y</SerialNo>\n                    <InstallDate>09/18/2025</InstallDate>\n                    <ServiceContractNumber> </ServiceContractNumber>\n                    <ServiceContractExpireDate xsi:nil=\"true\"/>\n                    <PoNumber></PoNumber>\n                    <PoAmount>0</PoAmount>\n                    <CopayAmount>0</CopayAmount>\n                </ProductInfo>\n                <ShippingInfo xsi:nil=\"true\"/>\n                <CallCreatedOn>10/27/2025 19:09:23</CallCreatedOn>\n                <AuthNo xsi:nil=\"true\"/>\n            </CallInfo>\n            <ErrorInfo xsi:nil=\"true\" xmlns=\"\"/>\n        </getCallInfoResponce>\n    </soapenv:Body>\n</soapenv:Envelope>"
+        }
+      ]
+    }
+  ]
+}
