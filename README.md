@@ -13,7 +13,6 @@ The Data is normalized into a unified JSON format and printed to the console.
 - xml2js (XML parsing)
 - ssh2-sftp-client (SFTP access)
 - dotenv (environment variables)
-- jest (testing)
 
 ## Project Structure
 ```
